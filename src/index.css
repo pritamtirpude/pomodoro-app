@@ -1,0 +1,134 @@
+@import 'tailwindcss';
+
+@theme {
+  /* colors */
+  --color-blue-50: #eff1fa;
+  --color-blue-100: #d7e0ff;
+  --color-blue-850: #1e213f;
+  --color-blue-900: #161932;
+  --color-blue-950: #14172e;
+
+  --color-grey-200: #e4e2e2;
+  --color-grey-400: #bbbdcb;
+
+  --color-cyan-300: #70f3f8;
+
+  --color-red-400: #f87070;
+
+  --color-purple-400: #d881f8;
+
+  /* Font Family Kumbh Sans */
+  --font-kumbh: 'Kumbh Sans', sans-serif;
+  --text-kumbh-desktop-lg: 100px;
+  --text-kumbh-desktop-lg--line-height: 125%;
+  --text-kumbh-desktop-lg--letter-spacing: -5px;
+  --text-kumbh-desktop-md: 16px;
+  --text-kumbh-desktop-md--line-height: 125%;
+  --text-kumbh-desktop-md--letter-spacing: 15px;
+  --text-kumbh-desktop-sm: 14px;
+  --text-kumbh-desktop-sm--line-height: 120%;
+  --text-kumbh-desktop-sm--letter-spacing: 0px;
+  --text-kumbh-mobile-lg: 80px;
+  --text-kumbh-mobile-lg--line-height: 125%;
+  --text-kumbh-mobile-lg--letter-spacing: -5px;
+  --text-kumbh-mobile-md: 14px;
+  --text-kumbh-mobile-md--line-height: 120%;
+  --text-kumbh-mobile-md--letter-spacing: 13px;
+  --text-kumbh-mobile-sm: 12px;
+  --text-kumbh-mobile-sm--line-height: 125%;
+  --text-kumbh-mobile-sm--letter-spacing: 0px;
+  --text-kumbh-setting-preset-one: 28px;
+  --text-kumbh-setting-preset-one--line-height: 125%;
+  --text-kumbh-setting-preset-one--letter-spacing: 0px;
+  --text-kumbh-setting-preset-two: 13px;
+  --text-kumbh-setting-preset-two--line-height: 145%;
+  --text-kumbh-setting-preset-two--letter-spacing: 0px;
+  --text-kumbh-setting-preset-three: 13px;
+  --text-kumbh-setting-preset-three--line-height: 125%;
+  --text-kumbh-setting-preset-three--letter-spacing: 5px;
+  --text-kumbh-setting-preset-four: 12px;
+  --text-kumbh-setting-preset-four--line-height: 125%;
+  --text-kumbh-setting-preset-four--letter-spacing: 0px;
+
+  /* Font Family Roboto Slab */
+  --font-roboto: 'Roboto Slab', serif;
+  --text-roboto-desktop-lg: 100px;
+  --text-roboto-desktop-lg--line-height: 130%;
+  --text-roboto-desktop-lg--letter-spacing: 0px;
+  --text-roboto-desktop-md: 16px;
+  --text-roboto-desktop-md--line-height: 125%;
+  --text-roboto-desktop-md--letter-spacing: 15px;
+  --text-roboto-desktop-sm: 14px;
+  --text-roboto-desktop-sm--line-height: 130%;
+  --text-roboto-desktop-sm--letter-spacing: 0px;
+  --text-roboto-mobile-lg: 80px;
+  --text-roboto-mobile-lg--line-height: 133%;
+  --text-roboto-mobile-lg--letter-spacing: 0px;
+  --text-roboto-mobile-md: 14px;
+  --text-roboto-mobile-md--line-height: 130%;
+  --text-roboto-mobile-md--letter-spacing: 13px;
+  --text-roboto-mobile-sm: 12px;
+  --text-roboto-mobile-sm--line-height: 120%;
+  --text-roboto-mobile-sm--letter-spacing: 0px;
+  --text-roboto-setting-preset-one: 16px;
+  --text-roboto-setting-preset-one--line-height: 125%;
+  --text-roboto-setting-preset-one--letter-spacing: 0px;
+
+  /* Font Family Space Mono */
+  --font-mono: 'Space Mono', monospace;
+  --text-mono-desktop-lg: 100px;
+  --text-mono-desktop-lg--line-height: 150%;
+  --text-mono-desktop-lg--letter-spacing: -10px;
+  --text-mono-desktop-md: 16px;
+  --text-mono-desktop-md--line-height: 150%;
+  --text-mono-desktop-md--letter-spacing: 15px;
+  --text-mono-desktop-sm: 13px;
+  --text-mono-desktop-sm--line-height: 145%;
+  --text-mono-desktop-sm--letter-spacing: 0px;
+  --text-mono-mobile-lg: 80px;
+  --text-mono-mobile-lg--line-height: 120%;
+  --text-mono-mobile-lg--letter-spacing: -10px;
+  --text-mono-mobile-md: 14px;
+  --text-mono-mobile-md--line-height: 150%;
+  --text-mono-mobile-md--letter-spacing: 13px;
+  --text-mono-mobile-sm: 12px;
+  --text-mono-mobile-sm--line-height: 150%;
+  --text-mono-mobile-sm--letter-spacing: 0px;
+  --text-mono-setting-preset-one: 16px;
+  --text-mono-setting-preset-one--line-height: 125%;
+  --text-mono-setting-preset-one--letter-spacing: 0px;
+}
+
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url('/fonts/KumbhSans.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/fonts/RobotoSlab.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url('/fonts/SpaceMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.bg-gradient {
+  background: linear-gradient(to left, #2e325a, #0e112a);
+}
+
+.circle-shadow {
+  box-shadow:
+    -50px -50px 100px #272c5a,
+    50px 50px 100px #121530;
+}
