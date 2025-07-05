@@ -2,7 +2,9 @@ import { motion } from 'motion/react';
 import { usePomodoroStore } from '../../store/pomodoroStore';
 
 const Settings = () => {
-  const { setIsSettingsClicked } = usePomodoroStore();
+  const setIsSettingsClicked = usePomodoroStore(
+    (state) => state.setIsSettingsClicked
+  );
   return (
     <motion.div
       whileHover={{ scale: 1.1 }}
