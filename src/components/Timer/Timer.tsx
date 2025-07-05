@@ -1,3 +1,4 @@
+import { AnimateNumber } from 'motion-plus/react';
 import { useEffect } from 'react';
 import { cn } from '../../lib/utils';
 import { usePomodoroStore } from '../../store/pomodoroStore';
@@ -79,28 +80,56 @@ const Timer = () => {
           <div className="absolute inset-0 z-10 flex items-center justify-center p-2.5 md:p-3.5">
             <CircularProgressBar />
           </div>
-          <div className="z-20 flex flex-col gap-y-2">
+          <div className="z-20 flex flex-col items-center justify-center gap-y-2">
             <div
               className={cn(
-                'font-kumbh text-kumbh-mobile-lg md:text-kumbh-desktop-lg',
-                fontFamily === 'roboto' &&
-                  'md:text-roboto-desktop-lg text-roboto-mobile-lg font-roboto',
-                fontFamily === 'mono' &&
-                  'md:text-mono-desktop-lg text-mono-mobile-lg font-mono'
+                'flex flex-1 items-center justify-center text-blue-100'
               )}
             >
-              <span className={cn('font-bold text-blue-100')}>
+              <AnimateNumber
+                className={cn(
+                  'text-kumbh-mobile-lg md:text-kumbh-desktop-lg font-bold',
+                  fontFamily === 'roboto' &&
+                    'text-roboto-mobile-lg font-roboto md:text-roboto-desktop-lg font-bold',
+                  fontFamily === 'mono' &&
+                    'md:text-mono-desktop-lg text-mono-mobile-lg font-mono font-bold'
+                )}
+                format={{
+                  minimumIntegerDigits: 2,
+                }}
+              >
                 {timeLeft && pad(Math.floor(timeLeft / 60))}
-              </span>
-              <span className="font-bold text-blue-100">:</span>
-              <span className="font-bold text-blue-100">
+              </AnimateNumber>
+              <div
+                className={cn(
+                  'text-kumbh-mobile-lg md:text-kumbh-desktop-lg font-bold',
+                  fontFamily === 'roboto' &&
+                    'text-roboto-mobile-lg font-roboto md:text-roboto-desktop-lg font-bold',
+                  fontFamily === 'mono' &&
+                    'md:text-mono-desktop-lg text-mono-mobile-lg font-mono font-bold'
+                )}
+              >
+                :
+              </div>
+              <AnimateNumber
+                className={cn(
+                  'text-kumbh-mobile-lg md:text-kumbh-desktop-lg font-bold',
+                  fontFamily === 'roboto' &&
+                    'text-roboto-mobile-lg font-roboto md:text-roboto-desktop-lg font-bold',
+                  fontFamily === 'mono' &&
+                    'md:text-mono-desktop-lg text-mono-mobile-lg font-mono font-bold'
+                )}
+                format={{
+                  minimumIntegerDigits: 2,
+                }}
+              >
                 {timeLeft && pad(timeLeft % 60)}
-              </span>
+              </AnimateNumber>
             </div>
 
             <div
               className={cn(
-                'font-kumbh text-kumbh-desktop-md flex flex-col justify-center',
+                'font-kumbh text-kumbh-desktop-md',
                 fontFamily === 'roboto' && 'font-roboto text-roboto-desktop-md',
                 fontFamily === 'mono' && 'text-mono-desktop-md font-mono'
               )}

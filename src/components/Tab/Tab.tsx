@@ -19,7 +19,6 @@ const Tab = ({ tab }: TabTypeProps) => {
 
   return (
     <motion.ul
-      layout
       onClick={() => {
         setIsActiveTab(tab.value as TabActive);
         setIsRunning(false);
@@ -29,7 +28,6 @@ const Tab = ({ tab }: TabTypeProps) => {
       )}
     >
       <motion.li
-        layout
         className={cn(
           'md:text-kumbh-desktop-sm text-kumbh-mobile-sm font-kumbh font-bold',
           fontFamilyState === 'roboto' &&
@@ -43,6 +41,11 @@ const Tab = ({ tab }: TabTypeProps) => {
       </motion.li>
       {isActiveTab === tab.value && (
         <motion.div
+          transition={{
+            type: 'spring',
+            stiffness: 600,
+            damping: 40,
+          }}
           layoutId="indicator"
           className={cn(
             'absolute -z-10 size-full rounded-full',

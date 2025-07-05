@@ -22,6 +22,9 @@
   --text-kumbh-desktop-lg: 100px;
   --text-kumbh-desktop-lg--line-height: 125%;
   --text-kumbh-desktop-lg--letter-spacing: -5px;
+  --text-kumbh-desktop-mid: 80px;
+  --text-kumbh-desktop-mid--line-height: 125%;
+  --text-kumbh-desktop-mid--letter-spacing: -5px;
   --text-kumbh-desktop-md: 16px;
   --text-kumbh-desktop-md--line-height: 125%;
   --text-kumbh-desktop-md--letter-spacing: 15px;
@@ -31,6 +34,9 @@
   --text-kumbh-mobile-lg: 80px;
   --text-kumbh-mobile-lg--line-height: 125%;
   --text-kumbh-mobile-lg--letter-spacing: -5px;
+  --text-kumbh-mobile-mid: 60px;
+  --text-kumbh-mobile-mid--line-height: 125%;
+  --text-kumbh-mobile-mid--letter-spacing: -5px;
   --text-kumbh-mobile-md: 14px;
   --text-kumbh-mobile-md--line-height: 120%;
   --text-kumbh-mobile-md--letter-spacing: 13px;

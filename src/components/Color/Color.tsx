@@ -10,7 +10,8 @@ type ColorPropsType = {
 };
 
 const Color = ({ color }: ColorPropsType) => {
-  const { setIsColorActive, isColorActive } = usePomodoroStore();
+  const setIsColorActive = usePomodoroStore((state) => state.setIsColorActive);
+  const isColorActive = usePomodoroStore((state) => state.isColorActive);
   return (
     <div
       onClick={() => setIsColorActive(color.value)}
