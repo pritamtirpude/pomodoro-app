@@ -2,7 +2,7 @@
 
 A simple and effective Pomodoro timer app built with React, TypeScript, and Vite. Boost your productivity by managing your work and break intervals, tracking your focus, and staying organized.
 
-![App Screenshot](./screenshot.png)
+![App Screenshot](public/screenshot.png)
 
 ## Tech Stack
 
